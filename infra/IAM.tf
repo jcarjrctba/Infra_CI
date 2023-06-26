@@ -36,7 +36,7 @@ resource "aws_iam_role_policy" "ecs_ecr" {
   })
 }
 
-resource "aws_iam_instance_profile" "perfil" {
-  name = "${var.cargoIAM}_perfil"
+resource "aws_iam_instance_profile" "perfill" {
+  name = "${var.cargoIAM}_perfill"
   role = aws_iam_role.cargo.name
 }
